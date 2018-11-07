@@ -1,0 +1,5 @@
+<resources>
+    <string name="author">chrs</string>
+    <string name="description">动态视频桌面</string>
+    <string name="service_name">视频桌面</string>
+</resources>

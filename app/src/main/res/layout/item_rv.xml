@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xslczx.widget.RatioLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:ratio="0.5625"
+        app:ratioMode="width"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.xslczx.widget.ShapeImageView
+            app:siv_border_color="@android:color/darker_gray"
+            android:id="@+id/iv_item"
+            app:siv_border_size="1dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"/>
+
+    <TextView
+            android:id="@+id/tv_item"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</com.xslczx.widget.RatioLayout>

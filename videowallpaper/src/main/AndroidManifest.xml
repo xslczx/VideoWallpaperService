@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.chrs.videowallpaper">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="${BROADCAST_RECEIVER_PERMISSION}"/>
+
+    <application>
+
+        <service
+                android:name=".service.VideoWallpaperService"
+                android:label="壁纸服务[视频]"
+                android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data
+                    android:name="android.service.wallpaper"
+                    android:resource="@xml/video_wallpaper"/>
+        </service>
+
+
+        <activity
+                android:name="cn.neiwang.emm.ui.MockHome"
+                android:enabled="false"
+                android:label="MockHome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
