@@ -17,18 +17,5 @@
                     android:name="android.service.wallpaper"
                     android:resource="@xml/video_wallpaper"/>
         </service>
-
-
-        <activity
-                android:name="cn.neiwang.emm.ui.MockHome"
-                android:enabled="false"
-                android:label="MockHome" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.HOME" />
-            </intent-filter>
-        </activity>
     </application>
 </manifest>

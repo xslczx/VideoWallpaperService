@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void sendReceive(final VideoInfo videoInfo, final boolean isVolume) {
         //控制延迟时间（当壁纸界面为黑屏时可以适当将其设置长一点，看手机好坏了，一般一秒(1000)应该够了）
-        VideoUtils.sSendTime = 800;
+        VideoUtils.sSendTime = 1500;
         //设置视频桌面（默认Toast为false）
 //        VideoUtils.setVideoWallpaper(this,file,isVolume);
         VideoUtils.setVideoWallpaper(this, videoInfo, isVolume, true);
